@@ -1,0 +1,66 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.5 in} % set width of text portion
+\addtolength{\topmargin}{-.200in}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Jarrad Battaglia}
+% Draw a horizontal line the whole width of resume:
+ \moveleft.5\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{285 Third St, Unit 641}
+ \moveleft.5\hoffset\centerline{Cambridge, MA 02142}
+ \moveleft.5\hoffset\centerline{(610)-420-3083}
+ \moveleft.5\hoffset\centerline{jmbbat@gmail.com}
+ \moveleft.5\hoffset\centerline{\textbf{Website:}  https://www.linkedin.com/in/jarradbattaglia}
+
+\begin{resume}
+ 
+\section{EDUCATION} {\sl Bachelor of Science,} Computer Science \\
+                Drexel University, Philadelphia, PA, June 2014 
+  
+\section{EXPERIENCE} {\sl Software Engineer} \hfill July 2014 to Present \\
+                Amazon.com, Amazon Web Services, Elastic File System \\
+                Cambridge, MA 
+                 \begin{itemize}  \itemsep -0pt %reduce space between lines
+                \item Created Java metering component for the EFS service which tracked customer file system usage and was used for billing purposes.
+                \item Designed and implemented a large workload system that could create hundreds of AWS instances to simulate customer-like traffic on dev, gamma, and production instances of the EFS service, which could then scale to the needs of the operator.
+                \item Designed and implemented canaries for EFS service that measured different components of customer traffic.
+                \item Worked on the EFS deployments team and contributed to adding new functionality to pre-existing deployment library and added concurrent code which decreased time of deployment by two-thirds.
+                \item Integrated new internal SSL certificate API into deployment scripts which needed to verify and update EFS server certificates with AWS IAM.
+                \item Created deployment scripts for metering EMR code, which deployed from developer desktop or internal CI service into AWS Data Pipeline and S3.
+                \end{itemize}
+                {\sl Software Engineer Intern} \hfill September 2012 to March 2013 \\
+                Amazon.com, Fulfillment By Amazon, Inventory and Reimbursements \\
+                Seattle, WA 
+                \begin{itemize} \itemsep -0pt
+                \item Used AWS Cloudsearch to migrate an internal business site from a SQL database and updated internal website to use new model and service. 
+                \item Worked on Reimbursements project which was designed to stop mis-assignments of FBA inventory from being sent to other departments of company.
+                \item Created Hadoop EMR job, which measured how many lost items had been mis-assigned in the past 2 years.
+                \item Created Integration tests for Reimbursements project.
+                \end{itemize}
+   
+                {\sl Software Engineer Intern} \hfill September 2011 to March 2012 \\
+                Unisys, Cloud Computing \\
+                Malvern, PA 
+                \begin{itemize} \itemsep -0pt
+                \item Used Winforms and C Sharp to design and implement a custom XML editing tool that allowed for faster data entry for Cloud Computing team.
+                \item Created Perl scripts to add functionality to request tracker ticketing system.
+                \item Edited Apache Project Info Reports plugin source code to use IText PDF API to allow plugin to output PDF files.
+                \end{itemize}
+\section{LANGUAGES AND TOOLS} {\sl\bf Proficient Programming Languages:} Java, Python, Bash \\
+                 {\sl\bf Other Programming Languages:} Javascript, C++, Scala \\
+                 {\sl\bf Operating Systems:} Ubuntu, Redhat (RHEL 5), Windows \\
+                 {\sl\bf Tools \& Frameworks:} AWS Technologies (EC2, IAM, S3, EFS, DynamoDB, EMR), Boto, AWS CLI, AWS SDK (Java), Spring, Akka, Hadoop, Git, Maven, MySQL \\ 
+
+\end{resume}
+\end{document}
+
+
+
+
